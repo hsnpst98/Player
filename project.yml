@@ -1,0 +1,27 @@
+name: Player
+options:
+  bundleIdPrefix: com.benim
+  deploymentTarget:
+    iOS: "16.4"
+targets:
+  Player:
+    type: application
+    platform: iOS
+    sources: [Sources]
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: Oynatıcı
+        UILaunchScreen: {}
+        CADisableMinimumFrameDurationOnPhone: true
+        UIFileSharingEnabled: true
+        LSSupportsOpeningDocumentsInPlace: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.benim.player
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
